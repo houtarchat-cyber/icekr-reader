@@ -8,11 +8,11 @@
   "name": "icekr-reader",
   "version": "1.0.0",
   "description": "这个仓库包含了一个简洁的阅读器，可以从 icekr 中获取图片并提供更好的阅读体验。",
-  "main": "src/server.js",
-  "bin": "src/server.js",
+  "main": "server.js",
+  "bin": "server.js",
   "scripts": {
-    "start": "cd src && clear && node server.js",
-    "build": "pkg ./src/ --out-path build"
+    "start": "clear && node server.js",
+    "build": "pkg ."
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/houtarchat-cyber/icekr-reader/issues"
   },
-  "homepage": "https://github.com/houtarchat-cyber/icekr-reader#readme"
+  "homepage": "https://github.com/houtarchat-cyber/icekr-reader#readme",
+  "pkg": {
+    "assets": [
+      "general.html"
+    ]
+  }
 }
