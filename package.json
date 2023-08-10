@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "axios": "^1.4.0",
+    "pkg": "^5.8.1",
+    "ssh2": "^1.14.0",
+    "yargs": "^17.7.2"
+  },
+  "name": "icekr-reader",
+  "version": "1.0.0",
+  "description": "这个仓库包含了一个简洁的阅读器，可以从 icekr 中获取图片并提供更好的阅读体验。",
+  "main": "src/server.js",
+  "bin": "src/server.js",
+  "scripts": {
+    "start": "cd src && clear && node server.js",
+    "build": "pkg ./src/ --out-path build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houtarchat-cyber/icekr-reader.git"
+  },
+  "author": "Houtar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/houtarchat-cyber/icekr-reader/issues"
+  },
+  "homepage": "https://github.com/houtarchat-cyber/icekr-reader#readme"
+}
